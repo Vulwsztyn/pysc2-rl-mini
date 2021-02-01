@@ -1,7 +1,7 @@
 import os
 import argparse
 
-from rl.a3c import agent
+from a3c import agent
 
 
 parser = argparse.ArgumentParser(description='A3C')

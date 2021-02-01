@@ -3,13 +3,13 @@ import time
 import torch
 import torch.multiprocessing as mp
 
-from rl.envs import GameInterfaceHandler
-from rl.model import FullyConv
-from rl.optim import SharedAdam
-from rl.a3c.worker import worker_fn
-from rl.a3c.monitor import monitor_fn
-from rl.a3c.summary import writer_fn, Summary
-from rl.utils.sys_process import kill_child_processes
+from envs import GameInterfaceHandler
+from model import FullyConv
+from optim import SharedAdam
+from a3c.worker import worker_fn
+from a3c.monitor import monitor_fn
+from a3c.summary import writer_fn, Summary
+from utils.sys_process import kill_child_processes
 
 
 def main(args):
